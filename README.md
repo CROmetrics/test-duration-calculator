@@ -10,6 +10,6 @@ Live App - https://test-duration-calculator.herokuapp.com/
 
 ## Roadmap / Status
 
-* 0.0.1: hello world - provide simple input / output - IN DEV
-* 0.1.0: api - links with api to pull down average traffic / test by URL targets
-* 0.2.0: audiences - links with api to pull down audience explorer based traffic
+* `v0.0.1`: hello world - provide simple input / output - IN DEV
+* `v0.1.0`: api - links with api to pull down average traffic / test by URL targets
+* `v0.2.0`: audiences - links with api to pull down audience explorer based traffic
