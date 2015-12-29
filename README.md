@@ -5,7 +5,7 @@ Canvas app version of [Optimizely's A/B Test Sample Size Calculator](https://www
 https://test-duration-calculator.herokuapp.com/
 
 ## Goals:
-* Demo Optimizely Canvas App functionality
+* Simple conceptual demo of Optimizely Canvas App functionality
 * Provide framework and experience with [Optimizely OIU](https://github.com/optimizely/oui)
 
 ## Roadmap / Status
