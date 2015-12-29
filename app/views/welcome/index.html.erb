@@ -1,7 +1,83 @@
-<h2>Hello World</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<form>
+  <div class="form__header">
+    <div class="form__title">Title</div>
+    <p>Form information might go here if there was reason to do it.</p>
+  </div>
+  <fieldset>
+    <ol class="form-fields">
+      <li class="form-field__item">
+        <label class="label">
+          Single Input
+          <span class="label__optional">(Optional)</span>
+        </label>
+        <input type="text" class="text-input">
+        <div class="form-note">This is a form note.</div>
+      </li>
+      <li class="form-field__item">
+        <label class="label">Diabled Input</label>
+        <input type="text" class="text-input" disabled>
+      </li>
+      <li class="form-field__item">
+        <label class="label">Add/Remove Row</label>
+        <table class="table table--add-row width-1">
+          <tr>
+            <td><input type="text" class="text-input"></td>
+            <td><input type="text" class="text-input"></td>
+            <td class="table--add-row__controls">
+              <div class="flex">
+                <button class="button push--right">
+                  <svg class="icon">
+                    <use xlink:href="#add-16"></use>
+                  </svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" class="text-input"></td>
+            <td><input type="text" class="text-input"></td>
+            <td class="table--add-row__controls">
+              <div class="flex">
+                <button class="button push--right">
+                  <svg class="icon">
+                    <use xlink:href="#add-16"></use>
+                  </svg>
+                </button>
+                <button class="button">
+                  <svg class="icon">
+                    <use xlink:href="#close-16"></use>
+                  </svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" class="text-input"></td>
+            <td><input type="text" class="text-input"></td>
+            <td class="table--add-row__controls">
+              <div class="flex">
+                <button class="button push--right">
+                  <svg class="icon">
+                    <use xlink:href="#add-16"></use>
+                  </svg>
+                </button>
+                <button class="button">
+                  <svg class="icon">
+                    <use xlink:href="#close-16"></use>
+                  </svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </li>
+    </ol>
+  </fieldset>
+  <div class="form__footer button-row button-row--right">
+    <button class="button">Cancel</button>
+    <button class="button button--highlight">Submit</button>
+  </div>
+</form>
 
 <div class="container-fluid bg-gray-lighter">
   <div class="container">
