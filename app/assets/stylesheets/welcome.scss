@@ -1,3 +1,26 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$opt_blue: #0081ba;
+table {
+	tr {
+		td {
+			font-size: 1.25em;
+		}
+		td.result {
+			width: 100%;
+		}
+		input {
+			height: 60px;
+			font-size: 2.0em;
+			width: 100px !important;
+		}
+		.result {
+			font-size: 1.5em;
+			#results {
+				strong {
+					color: $opt_blue;
+				}
+			
+			}
+		}
+		
+	}
+}

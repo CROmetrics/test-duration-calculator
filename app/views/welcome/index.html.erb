@@ -3,81 +3,66 @@
     <div class="form__title">A/B Test Sample Size Calculator</div>
     <p>An in app version of <a href="https://www.optimizely.com/resources/sample-size-calculator/">Optimizely's A/B Test Sample Size Calculator</a></p>
   </div>
-  <fieldset>
-    <ol class="form-fields">
-      <li class="form-field__item">
-        <label class="label">
-          Single Input
-          <span class="label__optional">(Optional)</span>
-        </label>
-        <input type="text" class="text-input">
-        <div class="form-note">This is a form note.</div>
-      </li>
-      <li class="form-field__item">
-        <label class="label">Diabled Input</label>
-        <input type="text" class="text-input" disabled>
-      </li>
-      <li class="form-field__item">
-        <label class="label">Add/Remove Row</label>
-        <table class="table table--add-row width-1">
-          <tr>
-            <td><input type="text" class="text-input"></td>
-            <td><input type="text" class="text-input"></td>
-            <td class="table--add-row__controls">
-              <div class="flex">
-                <button class="button push--right">
-                  <svg class="icon">
-                    <use xlink:href="#add-16"></use>
-                  </svg>
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="text" class="text-input"></td>
-            <td><input type="text" class="text-input"></td>
-            <td class="table--add-row__controls">
-              <div class="flex">
-                <button class="button push--right">
-                  <svg class="icon">
-                    <use xlink:href="#add-16"></use>
-                  </svg>
-                </button>
-                <button class="button">
-                  <svg class="icon">
-                    <use xlink:href="#close-16"></use>
-                  </svg>
-                </button>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="text" class="text-input"></td>
-            <td><input type="text" class="text-input"></td>
-            <td class="table--add-row__controls">
-              <div class="flex">
-                <button class="button push--right">
-                  <svg class="icon">
-                    <use xlink:href="#add-16"></use>
-                  </svg>
-                </button>
-                <button class="button">
-                  <svg class="icon">
-                    <use xlink:href="#close-16"></use>
-                  </svg>
-                </button>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </li>
-    </ol>
-  </fieldset>
-  <div class="form__footer button-row button-row--right">
-    <button class="button">Cancel</button>
-    <button class="button button--highlight">Submit</button>
-  </div>
 </form>
+
+<div class="lego-grid">
+  <h2 class="text--center">Are Your Results Significant?</h2>
+  <table class="table" id="sample-size-calculator">
+    <tbody>
+      <tr>
+        <td class="cell-collapse"><input id="existing_conversions" type="text" class="text-input" value="25"></td>
+        <td class="soft-quad--left soft-double--top">Estimated existing conversion rate (%)</td>  
+      </tr>
+      <tr>
+        <td class="cell-collapse"><input id="minimum" type="text" class="text-input" value="15"></td>
+        <td class="soft-quad--left soft-double--top">Minimum improvement in conversion rate you want to detect (%)</td>
+      </tr>
+      <tr>
+        <td class="cell-collapse"><input id="versions" type="text" class="text-input" value="4"></td>
+        <td class="soft-quad--left soft-double--top">Number of variations / combinations (Including Control)</td>
+      </tr>
+      <tr>
+        <td class="cell-collapse"><input id="visitors" type="text" class="text-input" value="250"></td>
+        <td class="soft-quad--left soft-double--top">Average number of daily visitors</td>       
+      </tr>
+      <tr>
+        <td class="cell-collapse"><input id="percent" type="text" class="text-input" value="100"></td>
+        <td class="soft-quad--left soft-double--top">Percent visitors included in test?</td>  
+      </tr>
+      <tr>
+        <td colspan="3" class="result">You need to run the test: 
+          <p id="results"><strong>N</strong> days</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3"><button class="button button--highlight">Calculate Test Duration</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container-fluid bg-gray-lighter">
+  <div class="container">
+    <h3 class="text-uppercase text-center">Awards</h3>
+    <h2 class="text-center">CROmetrics is proudly listed as a 3-star Optimizely partner, the highest distinction given to solutions partners.</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "center-block" %>
+        <h4 class="text-center">Most Impactful Use of Personalization</h4>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "center-block" %>
+        <h4 class="text-center">Experience of the Year</h4>
+      </div>
+      <div class="col-md-4">
+        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "center-block" %>
+        <h4 class="text-center">The Better Together Award</h4>
+      </div>
+    </div>
+    <h3 class="text-center">Winner of three 2015 Optie Awards</h3>
+  </div>
+</div>
+
 
 <div class="container-fluid bg-gray-lighter">
   <div class="container">
