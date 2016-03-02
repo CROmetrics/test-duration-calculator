@@ -5,29 +5,29 @@
   </div>
 </form>
 
-<div class="lego-grid">
-  <h2 class="text--center">Are Your Results Significant?</h2>
+<div class="lego-grid background--white border--all">
+  <h2 class="text--center push-double--ends">Are Your Results Significant?</h2>
   <table class="table" id="sample-size-calculator">
     <tbody>
-      <tr>
-        <td class="cell-collapse"><input id="existing_conversions" type="text" class="text-input width--100" value="25"></td>
-        <td class="soft-quad--left soft-double--top">Estimated existing conversion rate (%)</td>  
+      <tr class="">
+        <td class="cell-collapse soft-quad--left soft-double--bottom"><input id="existing_conversions" type="text" class="text-input width--100" value="25"></td>
+        <td class="soft-quad--left soft-double--top soft-quad--bottom">Estimated existing conversion rate (%)</td>  
       </tr>
       <tr>
-        <td class="cell-collapse"><input id="minimum" type="text" class="text-input width--100" value="15"></td>
-        <td class="soft-quad--left soft-double--top">Minimum improvement in conversion rate you want to detect (%)</td>
+        <td class="cell-collapse soft-quad--left soft-double--bottom"><input id="minimum" type="text" class="text-input width--100" value="15"></td>
+        <td class="soft-quad--left soft-double--top soft-quad--bottom">Minimum improvement in conversion rate you want to detect (%)</td>
       </tr>
       <tr>
-        <td class="cell-collapse"><input id="versions" type="text" class="text-input width--100" value="4"></td>
-        <td class="soft-quad--left soft-double--top">Number of variations / combinations (Including Control)</td>
+        <td class="cell-collapse soft-quad--left soft-double--bottom"><input id="versions" type="text" class="text-input width--100" value="4"></td>
+        <td class="soft-quad--left soft-double--top soft-double--bottom">Number of variations / combinations (Including Control)</td>
       </tr>
-      <tr>
-        <td class="cell-collapse"><input id="visitors" type="text" class="text-input width--100" value="250"></td>
-        <td class="soft-quad--left soft-double--top">Average number of daily visitors</td>       
+      <tr> 
+        <td class="cell-collapse soft-quad--left soft-double--bottom"><input id="visitors" type="text" class="text-input width--100" value="250"></td>
+        <td class="soft-quad--left soft-double--top soft-double--bottom">Average number of daily visitors</td>       
       </tr>
-      <tr>
-        <td class="cell-collapse"><input id="percent" type="text" class="text-input width--100" value="100"></td>
-        <td class="soft-quad--left soft-double--top">Percent visitors included in test?</td>  
+      <tr class="border--bottom">
+        <td class="cell-collapse soft-quad--left soft-double--bottom"><input id="percent" type="text" class="text-input width--100" value="100"></td>
+        <td class="soft-quad--left soft-double--top soft-double--bottom">Percent visitors included in test?</td>  
       </tr>
       <tr>
         <td colspan="3" class="result">You need to run the test: 
@@ -35,34 +35,11 @@
         </td>
       </tr>
       <tr>
-        <td colspan="3"><button class="button button--highlight">Calculate Test Duration</button></td>
+        <td colspan="3" class="soft-double--bottom"><button class="button button--highlight">Calculate Test Duration</button></td>
       </tr>
     </tbody>
   </table>
 </div>
-
-<div class="container-fluid bg-gray-lighter">
-  <div class="container">
-    <h3 class="text-uppercase text-center">Awards</h3>
-    <h2 class="text-center">CROmetrics is proudly listed as a 3-star Optimizely partner, the highest distinction given to solutions partners.</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "center-block" %>
-        <h4 class="text-center">Most Impactful Use of Personalization</h4>
-      </div>
-      <div class="col-md-4">
-        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "center-block" %>
-        <h4 class="text-center">Experience of the Year</h4>
-      </div>
-      <div class="col-md-4">
-        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "center-block" %>
-        <h4 class="text-center">The Better Together Award</h4>
-      </div>
-    </div>
-    <h3 class="text-center">Winner of three 2015 Optie Awards</h3>
-  </div>
-</div>
-
 
 <div class="container-fluid bg-gray-lighter">
   <div class="container">
