@@ -3,6 +3,9 @@ table {
 	tr {
 		td {
 			font-size: 1.25em;
+			span {
+
+			}
 		}
 		td.result {
 			width: 100%;
@@ -10,7 +13,6 @@ table {
 		input {
 			height: 60px;
 			font-size: 2.0em;
-			width: 100px !important;
 		}
 		.result {
 			font-size: 1.5em;
