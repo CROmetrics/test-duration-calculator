@@ -1,3 +1,59 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+// Test Duration Calculator
+
+// To do
+// Add OUI Dialog for errors
+// Add percentage icons to appropriate inputs
+$(function() {
+    $("#sample-size-calculator button").on("click", function() {
+        validate();
+    })
+})
+
+
+function validate() {
+    var errors = "";
+    if ($("#existing_conversions").val() == "")
+        errors += "- Please enter your expected conversion rate.\n";
+    else if (isNaN($("#existing_conversions").val()) || $("#existing_conversions").val() > 100 || $("#existing_conversions").val() <= 0)
+        errors += "- Please enter a valid number for the conversion rate.\n";
+    if ($("#versions").val() == "")
+        errors += "- Please enter the number of combinations you have.\n";
+    else if (isNaN($("#versions").val()) || $("#versions").val() <= 0)
+        errors += "- Please enter a valid number for the combinations you have.\n";
+    if ($("#minimum").val() == "")
+        errors += "- Please enter desired change in conversion rate.\n";
+    else if (isNaN($("#minimum").val()) || $("#minimum").val() > 100 || $("#minimum").val() <= 0)
+        errors += "- Please enter a valid value for desired change in conversion rate.\n";
+    if ($("#percent").val() == "")
+        errors += "- Please enter the percentage of visitors to include in the test.\n";
+    else if (isNaN($("#percent").val()) || $("#percent").val() <= 0 || $("#percent").val() > 100)
+        errors += "- Please enter a valid number for percentage of visitors to include in the test.\n";
+    if ($("#visitors").val() == "")
+        errors += "- Please enter the average number of visitors on the test page.\n";
+    else if (isNaN($("#visitors").val()) || $("#visitors").val() <= 0)
+        errors += "- Please enter a valid number for the average number of visitors on the test page.\n";
+    if (errors.length > 0) {
+        alert(errors);
+        return false;
+    } else {
+        var meanSize;
+        var stdDev;
+        var power = 0.8416;
+        var significance = 1.6449;
+
+        meanSize = $("#existing_conversions").val() / 100;
+        stdDev = Math.sqrt(meanSize * (1 - meanSize));
+
+        var effectSize = meanSize * $("#minimum").val() / 100.0;
+        var numberOfVariations = parseFloat($("#versions").val());
+        var percent = parseFloat($("#percent").val()) / 100;
+        var perDayVisit = parseInt($("#visitors").val()) * percent;
+        var perVariationResult = Math.pow((4) * (stdDev / effectSize), 2);
+        var result = perVariationResult * (numberOfVariations);
+        result = Math.round(Math.round(result, 0) / perDayVisit);
+        if (result == 0)
+            $("#results").html("Less than a day");
+        else
+            $("#results").html("<strong>" + result + "</strong> day" + (result > 1 ? "s" : ""));
+    }
+}
