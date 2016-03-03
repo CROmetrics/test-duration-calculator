@@ -6,6 +6,12 @@ h1 {
 	margin: 0 auto;
 	color: $opt_dark_blue;
 }
+
+#logo {
+	position: absolute;
+	right: 5%;
+	top: 0;
+}
 // Calculator Styles
 table {
 	width: 90% !important;
