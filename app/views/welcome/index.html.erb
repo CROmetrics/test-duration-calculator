@@ -1,65 +1,67 @@
-<%= link_to (image_tag "logo-blue.png", alt: "CROmetrics", id: "logo"), "https://crometrics.com" %>
-<div class="lego-grid anchor--middle background--white border--all">
-  <h1 class="text--center push-double--top">A/B Split and Multivariate Test Duration Calculator</h1>
-  <h2 class="text--center push-double--bottom">Are Your Results Significant?</h2>
-  <table class="table" id="sample-size-calculator">
-    <tbody>
-      <tr class="">
-        <td class="soft-double--left soft-double--bottom width--1-8">
-          <input id="existing_conversions" type="text" class="text-input width--75" value="25">
-          <span>%</span>
-        </td>
-        <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Estimated existing conversion rate</td>  
-        <td class="soft-double--left soft-double--bottom width--1-8">
-          <input id="minimum" type="text" class="text-input width--75" value="15">
-          <span>%</span>
-        </td>
-        <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Minimum improvement in conversion rate you want to detect</td>
-      </tr>
-      <tr>
-        <td class="soft-double--left soft-double--bottom width--1-8">
-          <input id="versions" type="text" class="text-input width--100" value="4">
-        </td>
-        <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Number of variations / combinations (Including Control)</td>
-        <td class="soft-double--left soft-double--bottom width--1-8">
-          <input id="visitors" type="text" class="text-input width--100" value="250">
-        </td>
-        <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Average number of daily visitors</td>       
-      </tr>
-      <tr class="border--bottom">
-        <td class="soft-double--left soft-double--bottom width--1-8">
-          <input id="percent" type="text" class="text-input width--75" value="100">
-          <span>%</span>
-        </td>
-        <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Percent visitors included in test?</td>  
-      </tr>
-      <tr>
-        <td colspan="4" class="result">You need to run the test: 
-          <p id="results"><strong>N</strong> days</p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<div class="lego-grid anchor--middle push-double--top">
-  <div class="lego-grid__cell">
-    <h3 class=" caps text--center">Awards</h3>
-    <h2 class="text--center ">CROmetrics is proudly listed as a 3-star Optimizely partner, the highest distinction given to solutions partners.</h2>
-    <h4 class="text--center push-triple--bottom">We're excited to partner with Optimizely for the <a href="http://developers.optimizely.com/canvas/">canvas beta.</a> If you like the app or want to see how it's setup please <a href="https://github.com/CROmetrics/test-duration-calculator">take a look</a> - it's open source!</h4>
-    <div class="lego-grid__cell width--1-3 float--left">
-      <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "img--center" %>
-      <h4 class="text--center">Most Impactful Use of Personalization</h4>
+<div class="lego-grid anchor--middle">
+  <%= link_to (image_tag "logo-blue.png", alt: "CROmetrics", id: "logo", class: "float--right push--ends"), "https://crometrics.com" %>
+  <div class="lego-grid anchor--middle background--white border--all clear">
+    <h1 class="text--center push-double--top">A/B Split and Multivariate Test Duration Calculator</h1>
+    <h2 class="text--center push-double--bottom">Are Your Results Significant?</h2>
+    <table class="table" id="sample-size-calculator">
+      <tbody>
+        <tr class="">
+          <td class="soft-double--left soft-double--bottom width--1-8">
+            <input id="existing_conversions" type="text" class="text-input width--75" value="25">
+            <span>%</span>
+          </td>
+          <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Estimated existing conversion rate</td>  
+          <td class="soft-double--left soft-double--bottom width--1-8">
+            <input id="minimum" type="text" class="text-input width--75" value="15">
+            <span>%</span>
+          </td>
+          <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Minimum improvement in conversion rate you want to detect</td>
+        </tr>
+        <tr>
+          <td class="soft-double--left soft-double--bottom width--1-8">
+            <input id="versions" type="text" class="text-input width--100" value="4">
+          </td>
+          <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Number of variations / combinations (Including Control)</td>
+          <td class="soft-double--left soft-double--bottom width--1-8">
+            <input id="visitors" type="text" class="text-input width--100" value="250">
+          </td>
+          <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Average number of daily visitors</td>       
+        </tr>
+        <tr class="border--bottom">
+          <td class="soft-double--left soft-double--bottom width--1-8">
+            <input id="percent" type="text" class="text-input width--75" value="100">
+            <span>%</span>
+          </td>
+          <td class="soft-double--left soft-double--top soft-double--bottom width--3-8">Percent visitors included in test?</td>  
+        </tr>
+        <tr>
+          <td colspan="4" class="result">You need to run the test: 
+            <p id="results"><strong>N</strong> days</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="lego-grid anchor--middle push-double--top">
+    <div class="lego-grid__cell">
+      <h3 class=" caps text--center">Awards</h3>
+      <h2 class="text--center ">CROmetrics is proudly listed as a 3-star Optimizely partner, the highest distinction given to solutions partners.</h2>
+      <h4 class="text--center push-triple--bottom">We're excited to partner with Optimizely for the <a href="http://developers.optimizely.com/canvas/">canvas beta.</a> If you like the app or want to see how it's setup please <a href="https://github.com/CROmetrics/test-duration-calculator">take a look</a> - it's open source!</h4>
+      <div class="lego-grid__cell width--1-3 float--left">
+        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "img--center" %>
+        <h4 class="text--center">Most Impactful Use of Personalization</h4>
+      </div>
+      <div class="lego-grid__cell width--1-3 float--left">
+        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "img--center" %>
+        <h4 class="text--center">Experience of the Year</h4>
+      </div>
+      <div class="lego-grid__cell width--1-3 float--left">
+        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "img--center" %>
+        <h4 class="text--center">The Better Together Award</h4>
+      </div>
+      <h3 class="text--center soft-triple--top soft--bottom">Winner of three 2015 Optie Awards</h3>
+      <%= link_to image_tag("logo-blue.png", alt: "CROmetrics", class: "img--center"), "http://crometrics.com" %>
     </div>
-    <div class="lego-grid__cell width--1-3 float--left">
-      <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "img--center" %>
-      <h4 class="text--center">Experience of the Year</h4>
-    </div>
-    <div class="lego-grid__cell width--1-3 float--left">
-      <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "img--center" %>
-      <h4 class="text--center">The Better Together Award</h4>
-    </div>
-    <h3 class="text--center soft-triple--top soft--bottom">Winner of three 2015 Optie Awards</h3>
-    <%= link_to image_tag("logo-blue.png", alt: "CROmetrics", class: "img--center"), "http://crometrics.com" %>
   </div>
 </div>
 
