@@ -1,6 +1,10 @@
+
+// variables
 $opt_blue: #0081ba;
 $opt_dark_blue: #00415d;
 $dark-gray: #6b6b6b;
+
+
 
 h1 {
 	margin: 0 auto;
@@ -15,7 +19,10 @@ h3 {
 	right: 5%;
 	top: 10px;
 }
-// Calculator Styles
+
+
+
+// Calculator
 table {
 	width: 90% !important;
 	margin: 0 auto;
@@ -27,7 +34,28 @@ table {
 			input {
 				height: 60px;
 				font-size: 2.0em;
-			}		
+			}	
+			// percents by inputs
+			#existing_conversions, #percent, #minimum  {
+				border-bottom-right-radius: 0;
+				border-top-right-radius: 0;
+			}
+			
+			span {
+				font-size: 24px;
+				border: 1px solid #e0e0e0;
+				border-bottom-right-radius: 3px;
+				border-top-right-radius: 3px;
+				border-left: none;
+				background-color: #eeeeee;
+				color: #888888;
+				text-align: center;
+				width: 15px;
+				vertical-align: middle;
+				margin-left: -4px;
+				padding-top: 15px;
+				padding-bottom: 16px;
+			}	
 			button {
 				width: 50%;
 			}
