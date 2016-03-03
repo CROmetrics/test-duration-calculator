@@ -6,6 +6,7 @@ h1 {
 	margin: 0 auto;
 	color: $opt_dark_blue;
 }
+// Calculator Styles
 table {
 	width: 90% !important;
 	margin: 0 auto;
@@ -28,15 +29,12 @@ table {
 			p {
 				margin-bottom: 0;
 			}
-				#results {
-					font-size: 1.75em;
-					strong {
-						color: $opt_blue;
-					}
-
+			#results {
+				font-size: 1.75em;
+				strong {
+					color: $opt_blue;
 				}
 			}
-		
-		
+		}	
 	}
 }

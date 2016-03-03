@@ -1,5 +1,5 @@
 <%= image_tag "logo-white.png", alt: "CROmetrics", id: "logo" %>
-<div class="lego-grid background--white border--all">
+<div class="lego-grid anchor--middle background--white border--all">
   <h1 class="text--center push-double--top">A/B Split and Multivariate Test Duration Calculator</h1>
   <h2 class="text--center push-double--bottom">Are Your Results Significant?</h2>
   <table class="table" id="sample-size-calculator">
@@ -41,25 +41,23 @@
     </tbody>
   </table>
 </div>
-
-<div class="container-fluid bg-gray-lighter">
-  <div class="container">
-    <h3 class="text-uppercase text-center">Awards</h3>
-    <h2 class="text-center">CROmetrics is proudly listed as a 3-star Optimizely partner, the highest distinction given to solutions partners.</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "center-block" %>
-        <h4 class="text-center">Most Impactful Use of Personalization</h4>
-      </div>
-      <div class="col-md-4">
-        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "center-block" %>
-        <h4 class="text-center">Experience of the Year</h4>
-      </div>
-      <div class="col-md-4">
-        <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "center-block" %>
-        <h4 class="text-center">The Better Together Award</h4>
-      </div>
+<div class="lego-grid anchor--middle">
+  <div class="lego-grid__cell">
+    <h3 class=" caps text--center">Awards</h3>
+    <h2 class="text--center">CROmetrics is proudly listed as a 3-star Optimizely partner, the highest distinction given to solutions partners.</h2>
+    <div class="lego-grid__cell width--1-3 float--left">
+      <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "img--center" %>
+      <h4 class="text--center">Most Impactful Use of Personalization</h4>
     </div>
-    <h3 class="text-center">Winner of three 2015 Optie Awards</h3>
+    <div class="lego-grid__cell width--1-3 float--left">
+      <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "img--center" %>
+      <h4 class="text--center">Experience of the Year</h4>
+    </div>
+    <div class="lego-grid__cell width--1-3 float--left">
+      <%= image_tag "opties-winner-2015.png", alt: "Opties Winner 2015", class: "img--center" %>
+      <h4 class="text--center">The Better Together Award</h4>
+    </div>
+    <h3 class="text--center">Winner of three 2015 Optie Awards</h3>
   </div>
 </div>
+
