@@ -4,10 +4,11 @@
 // Add OUI Dialog for errors
 // Add percentage icons to appropriate inputs
 $(function() {
-    $("#sample-size-calculator button").on("click", function() {
+
+    $("#sample-size-calculator input").keyup(function() {
         validate();
-    })
-})
+    });
+});
 
 
 function validate() {
