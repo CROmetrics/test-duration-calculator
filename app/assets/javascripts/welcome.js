@@ -9,7 +9,6 @@ $(function() {
     });
 });
 
-
 function validate() {
     var errors = "";
     if ($("#existing_conversions").val() == "")
@@ -20,9 +19,9 @@ function validate() {
         errors += "- Please enter the number of combinations you have.\n";
     else if (isNaN($("#versions").val()) || $("#versions").val() <= 0)
         errors += "- Please enter a valid number for the combinations you have.\n";
-    if ($("#minimum").val() == "")
+    if ($("#improvement").val() == "")
         errors += "- Please enter desired change in conversion rate.\n";
-    else if (isNaN($("#minimum").val()) || $("#minimum").val() > 100 || $("#minimum").val() <= 0)
+    else if (isNaN($("#improvement").val()) || $("#improvement").val() <= 0)
         errors += "- Please enter a valid value for desired change in conversion rate.\n";
     if ($("#percent").val() == "")
         errors += "- Please enter the percentage of visitors to include in the test.\n";
@@ -44,7 +43,7 @@ function validate() {
         meanSize = $("#existing_conversions").val() / 100;
         stdDev = Math.sqrt(meanSize * (1 - meanSize));
 
-        var effectSize = meanSize * $("#minimum").val() / 100.0;
+        var effectSize = meanSize * $("#improvement").val() / 100.0;
         var numberOfVariations = parseFloat($("#versions").val());
         var percent = parseFloat($("#percent").val()) / 100;
         var perDayVisit = parseInt($("#visitors").val()) * percent;
