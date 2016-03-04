@@ -2,7 +2,6 @@
 
 // To do
 // Add OUI Dialog for errors
-// Add percentage icons to appropriate inputs
 $(function() {
 
     $("#sample-size-calculator input").keyup(function() {
