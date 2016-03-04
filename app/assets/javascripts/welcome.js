@@ -29,7 +29,7 @@ function validate() {
         errors += "- Please enter a valid number for percentage of visitors to include in the test.\n";
     if ($("#visitors").val() == "")
         errors += "- Please enter the average number of visitors on the test page.\n";
-    else if (isNaN($("#visitors").val()) || $("#visitors").val() <= 0)
+    else if (isNaN($("#visitors").val()) || $("#visitors").val() < 0)
         errors += "- Please enter a valid number for the average number of visitors on the test page.\n";
     if (errors.length > 0) {
         alert(errors);
