@@ -7,6 +7,9 @@ $(function() {
     $("#sample-size-calculator input").keyup(function() {
         validate();
     });
+    $("#sample-size-calculator input").mousedown(function() {
+        validate();
+    });
 });
 
 function validate() {
