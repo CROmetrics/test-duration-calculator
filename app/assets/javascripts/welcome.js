@@ -3,11 +3,7 @@
 // To do
 // Add OUI Dialog for errors
 $(function() {
-
-    $("#sample-size-calculator input").keyup(function() {
-        validate();
-    });
-    $("#sample-size-calculator input").mousedown(function() {
+    $("#sample-size-calculator input").on("mousedown keyup", function() {
         validate();
     });
 });
