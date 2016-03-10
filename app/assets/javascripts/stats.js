@@ -21,5 +21,5 @@ function stats(
   var perVariationResult = Math.pow((4) * (stdDev / effectSize), 2);
   var result = perVariationResult * (numberOfVariations);
   result = Math.round(Math.round(result, 0) / perDayVisit);
-
+  return result;
 }
