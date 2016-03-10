@@ -6,20 +6,20 @@ function stats(
   percentVisitorsIncluded, // e.g., `100` for 100% for all traffic
   dailyVisitors // e.g., `2000` for 2000 visitors
 ) {
-  var meanSize;
-  var stdDev;
-  var power = 0.8416;
-  var significance = 1.6449;
 
-  meanSize = existingConversions / 100;
-  stdDev = Math.sqrt(meanSize * (1 - meanSize));
-
+  var meanSize = existingConversions / 100.0;
   var effectSize = meanSize * minImprovement / 100.0;
+  var variantSize = meanSize + effectSize;
+  var variance = meanSize * (1 - meanSize) + variantSize * (1 - variantSize);
+  var significance = 90.0;
+   
+  var perVariationResult = 2.0 * ( significance / 100.0 ) * variance / Math.pow(effectSize,2) * Math.log(1 + Math.sqrt(variance) / effectSize)
+  
   var numberOfVariations = parseFloat(numberVariations);
   var percent = parseFloat(percentVisitorsIncluded) / 100;
   var perDayVisit = parseInt(dailyVisitors) * percent;
-  var perVariationResult = Math.pow((4) * (stdDev / effectSize), 2);
+
   var result = perVariationResult * (numberOfVariations);
-  result = Math.round(Math.round(result, 0) / perDayVisit);
+  result = Math.round(result.toPrecision(2) / perDayVisit);
   return result;
 }
