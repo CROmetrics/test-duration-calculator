@@ -35,24 +35,16 @@ function validate(supress) {
         if (!supress) {alert(errors);}
         return false;
     } else {
-        var meanSize;
-        var stdDev;
-        var power = 0.8416;
-        var significance = 1.6449;
-
-        meanSize = $("#existing_conversions").val() / 100;
-        stdDev = Math.sqrt(meanSize * (1 - meanSize));
-
-        var effectSize = meanSize * $("#improvement").val() / 100.0;
-        var numberOfVariations = parseFloat($("#versions").val());
-        var percent = parseFloat($("#percent").val()) / 100;
-        var perDayVisit = parseInt($("#visitors").val()) * percent;
-        var perVariationResult = Math.pow((4) * (stdDev / effectSize), 2);
-        var result = perVariationResult * (numberOfVariations);
-        result = Math.round(Math.round(result, 0) / perDayVisit);
-        if (result === 0)
-            $("#results").html("Less than a day");
-        else
-            $("#results").html("<strong>" + result + "</strong> day" + (result > 1 ? "s" : ""));
-    }
+    var result = stats(
+      $("#existing_conversions").val(), // existingConversions, // e.g., `5` for 5%
+      $("#improvement").val(), // minImprovement, // e.g., `10` for 10%
+      $("#versions").val(), // numberVariations, // e.g., `2` for control + 1variation
+      $("#percent").val(), // percentVisitorsIncluded, // e.g., `100` for 100% for all traffic
+      $("#visitors").val() // dailyVisitors // e.g., `2000` for 2000 visitors
+    );
+    if (result === 0)
+      $("#results").html("Less than a day");
+    else
+      $("#results").html("<strong>" + result + "</strong> day" + (result > 1 ? "s" : ""));
+  }
 }
