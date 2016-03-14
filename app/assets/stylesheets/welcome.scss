@@ -4,10 +4,9 @@ $opt_blue: #0081ba;
 $opt_dark_blue: #00415d;
 $dark-gray: #6b6b6b;
 
-* {
-	font-family: Proxima, Open Sans, sans-serif;
+body {
+	font-family: 'Proxima', Helvetica, Verdana, sans-serif;
 }
-
 h1 {
 	margin: 0 auto;
 	color: $opt_dark_blue;
@@ -63,7 +62,7 @@ table {
 				width: 15px;
 				vertical-align: middle;
 				margin-left: -4px;
-				padding: 15px 2px 16px 2px;
+				padding: 14px 2px 15px 2px;
 			}	
 			button {
 				width: 50%;

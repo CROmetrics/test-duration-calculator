@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 200;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-thin.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-thin.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 200;
+  font-style: italic;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-thinit.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-thinit.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 300;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-light.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 300;
+  font-style: italic;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-lightit.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-lightit.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 400;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-reg.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-reg.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 400;
+  font-style: italic;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-regit.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-regit.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 500;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-medium.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-medium.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 500;
+  font-style: italic;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-mediumit.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-mediumit.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 600;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-sbold.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-sbold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 600;
+  font-style: italic;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-sboldit.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-sboldit.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 700;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-bold.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 700;
+  font-style: italic;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-boldit.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-boldit.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 800;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-xbold.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-xbold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 800;
+  font-style: italic;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-xboldit.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-xboldit.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 900;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-black.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-black.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Proxima';
+  font-weight: 900;
+  font-style: italic;
+  src: url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-blackit.woff2") format("woff2"), url("//dhm5hy2vn8l0l.cloudfront.net/proxima/proximanova-blackit.woff") format("woff"); }
