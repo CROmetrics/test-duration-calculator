@@ -10,29 +10,31 @@ $(function() {
 });
 
 function validate(supress) {
-    var errors = "";
-    if ($("#existing_conversions").val() === "")
-        errors += "- Please enter your expected conversion rate.\n";
-    else if (isNaN($("#existing_conversions").val()) || $("#existing_conversions").val() > 100 || $("#existing_conversions").val() <= 0)
-        errors += "- Please enter a valid number for the conversion rate.\n";
-    if ($("#versions").val() === "")
-        errors += "- Please enter the number of combinations you have.\n";
-    else if (isNaN($("#versions").val()) || $("#versions").val() <= 0)
-        errors += "- Please enter a valid number for the combinations you have.\n";
-    if ($("#improvement").val() === "")
-        errors += "- Please enter desired change in conversion rate.\n";
-    else if (isNaN($("#improvement").val()) || $("#improvement").val() <= 0)
-        errors += "- Please enter a valid value for desired change in conversion rate.\n";
-    if ($("#percent").val() === "")
-        errors += "- Please enter the percentage of visitors to include in the test.\n";
-    else if (isNaN($("#percent").val()) || $("#percent").val() <= 0 || $("#percent").val() > 100)
-        errors += "- Please enter a valid number for percentage of visitors to include in the test.\n";
-    if ($("#visitors").val() === "")
-        errors += "- Please enter the average number of visitors on the test page.\n";
-    else if (isNaN($("#visitors").val()) || $("#visitors").val() < 0)
-        errors += "- Please enter a valid number for the average number of visitors on the test page.\n";
-    if (errors.length > 0) {
-        if (!supress) {alert(errors);}
+
+    var errors = 0;
+    $("#existing_conversions, #versions, #improvement, #percent, #visitors").removeClass("error");
+    if (isNaN($("#existing_conversions").val()) || $("#existing_conversions").val() > 100 || $("#existing_conversions").val() <= 0 || $("#existing_conversions").val() === "") {
+        $("#existing_conversions").addClass("error");
+        errors++;
+    }
+    if (isNaN($("#versions").val()) || $("#versions").val() <= 0 || $("#versions").val() === "") {
+        $("#versions").addClass("error");
+        errors++;
+    }
+    if ($("#improvement").val() === "" || isNaN($("#improvement").val()) || $("#improvement").val() <= 0) {
+        $("#improvement").addClass("error");
+        errors++;
+    }
+    if ($("#percent").val() === "" || isNaN($("#percent").val()) || $("#percent").val() <= 0 || $("#percent").val() > 100) {
+        $("#percent").addClass("error");
+        errors++;
+    }
+    if ($("#visitors").val() === "" || isNaN($("#visitors").val()) || $("#visitors").val() < 0) {
+        $("#visitors").addClass("error");
+        errors++;
+    }
+    if (errors > 0) {
+        $("#results").html("<strong>" + Infinity + "</strong> days");
         return false;
     } else {
     var result = stats(

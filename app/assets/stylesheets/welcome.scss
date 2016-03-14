@@ -14,7 +14,12 @@ h1 {
 h3 {
 	clear: left;
 }
-
+.error {
+	border: 1px solid red;
+	&:hover, &:focus, &:active {
+		border: 1px solid red;
+	}
+}
 .clear {
 	clear: both;
 }
