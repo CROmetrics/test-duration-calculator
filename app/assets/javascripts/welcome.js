@@ -3,7 +3,7 @@
 // To do
 // Add OUI Dialog for errors
 $(function() {
-    $("#sample-size-calculator input").on("mousedown keyup", function() {
+    $("#sample-size-calculator td").on("mousedown keyup", function() {
         validate();
     });
     validate(true);
@@ -17,7 +17,7 @@ function validate(supress) {
         $("#existing_conversions").addClass("error");
         errors++;
     }
-    if (isNaN($("#versions").val()) || $("#versions").val() <= 0 || $("#versions").val() === "") {
+    if ($("#versions").val() <= 0 || $("#versions").val() === "") {
         $("#versions").addClass("error");
         errors++;
     }
