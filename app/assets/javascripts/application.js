@@ -15,3 +15,4 @@
 //= require turbolinks
 //= require stats
 //= require welcome
+//= require_tree .
